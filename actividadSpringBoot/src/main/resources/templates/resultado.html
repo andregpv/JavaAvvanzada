@@ -2,14 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Resultado</title>
+    <title>Resultado del Triangulo</title>
 </head>
 <body>
-<h1>Resultados</h1>
-<p>base: <span th:text="${base}">0</span></p>
-<p>altura: <span th:text="${altura}">0</span></p>
-<p>area: <span th:text="${area}">0</span></p>
-<p>perímetro: <span th:text="${perimetro}">0</span></p>
-<br>
+<h2>Resultado</h2>
+
+<div>
+    <p>Nombre: <span th:text="${nombre}"></span></p>
+    <p>Base: <span th:text="${triangulo.base}"></span></p>
+    <p>Altura: <span th:text="${triangulo.altura}"></span></p>
+    <p>Area: <span th:text="${triangulo.area}"></span></p>
+    <p>Perimetro: <span th:text="${triangulo.perimetro}"></span></p>
+</div>
+
+<a href="/">Volver al inicio</a>
 </body>
 </html>
